@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class ProjectTest {
 
-	Project project;
+	Project project,project1;
 	
 	Team team1;
 	Person person,person1,person2,person3;
@@ -16,6 +16,7 @@ public class ProjectTest {
 	@Before
 	public void setUp() throws Exception {
 		project = new Project("Online Admission System","JSP");
+		project1 = new Project("Social networking Site","ruby on rails");
 		
 		sprint = new Sprint();
 		owner = new Owner();
@@ -36,7 +37,8 @@ public class ProjectTest {
 
 	@Test
 	public void test() {
-		
+		assertEquals("Online Admission System", project.getProjectName());
+		assertEquals("Social networking Site", project1.getProjectName());
 	}
 
 }

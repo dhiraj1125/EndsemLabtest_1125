@@ -21,6 +21,9 @@ public class Person {
 		// TODO Auto-generated method stub
 		return this.role;
 	}
-	
+	public String getGender() {
+		// TODO Auto-generated method stub
+		return this.gender;
+	}
 
 }

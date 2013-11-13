@@ -10,8 +10,10 @@ public class PersonTest {
 	Role owner;
 	ProjectManager projectManager;
 	TeamMember teamMember;
+	
 	@Before
 	public void setUp() throws Exception {
+		person = new Person("Krishna","male",owner);
 		owner = new Owner();
 		projectManager = new ProjectManager();
 		teamMember = new TeamMember();
@@ -20,7 +22,9 @@ public class PersonTest {
 
 	@Test
 	public void test() {
-		//fail("Not yet implemented");
+		assertEquals("Krishna", person.getName());
+		
+		assertEquals("male", person.getGender());
 	}
 
 }
