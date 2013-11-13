@@ -44,5 +44,11 @@ public class Team {
 		// TODO Auto-generated method stub
 		this.teamMembers.add(person2);
 	}
+	public void displayTeam() {
+		// TODO Auto-generated method stub
+		//System.out.println("team members are" +);
+		
+		
+	}
 
 }

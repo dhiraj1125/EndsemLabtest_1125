@@ -25,5 +25,8 @@ public class Person {
 		// TODO Auto-generated method stub
 		return this.gender;
 	}
+	public void display(){
+		System.out.println("Name: "+ this.name + " Gender: "+ this.gender + " Role: "+ this.role);
+	}
 
 }
